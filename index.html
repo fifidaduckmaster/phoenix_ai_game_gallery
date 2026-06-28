@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Large Cave Treasure Escape</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="title-card">
+      <h1>Large Cave Treasure Escape</h1>
+      <p>Enter the cave, choose your path, find the treasure, then return to the entrance to escape.</p>
+    </section>
+
+    <section class="hud">
+      <div><strong>Objective:</strong> <span id="objectiveText">Find the treasure.</span></div>
+      <div><strong>Treasure:</strong> <span id="treasureText">Not collected</span></div>
+      <div><strong>Lives:</strong> <span id="livesText">3</span></div>
+    </section>
+
+    <canvas id="gameCanvas" width="960" height="640" aria-label="Large cave treasure escape game"></canvas>
+
+    <section class="controls">
+      <p><strong>Move:</strong> Arrow keys or WASD</p>
+      <p><strong>Goal:</strong> Take either cave path to reach the treasure chamber. After collecting the treasure, return to the entrance where you started.</p>
+      <button id="restartButton">Restart Game</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
